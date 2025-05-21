@@ -1,0 +1,580 @@
+html,body {
+
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gotham', Arial, sans-serif;
+}
+
+
+
+
+/* Estilos para el botón "Solicita tu Crédito" */
+.solicita-credito {
+  position: absolute; /* Posición absoluta */
+  top: 1.9%; /* Ajusta la posición verticalmente */
+  right: 130px; /* Ajusta la posición horizontalmente */
+  background-color: #FF4438; /* Color de fondo naranja */
+  color: #fff; /* Color de texto blanco */
+  border: none; 
+  padding: 15px 25px; /* Ajusta el padding del botón */
+  border-radius: 20px; /* Añade bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a puntero */
+  z-index: 1000; /* Asegura que esté por encima del contenido */
+  animation: fadeIn 1s ease-out; /* Animación al cargar la página */
+}
+
+.solicita-credito:hover {
+  background-color: #006069; /* Color de fondo del banner */
+}
+
+@media (max-width: 932px) {
+  .solicita-credito {
+      display: none; /* Oculta el botón cuando el ancho de pantalla es menor a 932px */
+  }
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+/* Estilos Generales */
+body {
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+  overflow-y: auto;
+  animation: fadeIn 1s ease-out;
+}
+
+
+
+/* Sección Central */
+main {
+  padding: 20px;
+}
+
+.contenido-principal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  animation: fadeIn 1s ease-out;
+  background-color: white;
+  
+}
+
+.contenido-izquierda {
+  flex: 1;
+}
+
+.imagen img {
+  max-width: 100%;
+  height: auto;
+  width: 100%; /* Ancho de la imagen del portátil */
+  margin-left: 50px;
+  animation: fadeInFromCenter 1s ease-out;
+
+}
+
+.contenido-derecha {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  color: #000000; /* Color del texto */
+  font-size: 15px;
+  text-align: left;
+}
+
+.texto {
+  
+  margin-top: 30px; /* Ajusta el margen superior según sea necesario */
+  text-align: left;
+  font-size: 17px;
+  line-height: 1.9; /* Ajusta la altura de línea */
+}
+ 
+   
+
+  
+
+
+.texto h1 {
+  font-size: 50px;
+  color: #006069;
+  text-align: left;
+  margin-top: 5px; /* Espacio superior */
+  margin-bottom: 20px; /* Ajusta el margen inferior del título */
+  line-height: 1.2; /* Ajusta la altura de línea */
+}
+
+
+
+.redes-sociales {
+  margin-top: 20px;
+  display: flex;
+  margin-right: 500px;
+  justify-content: flex-start;
+  align-items: center;
+ 
+  padding-left: 0;
+}
+
+.redes-sociales a {
+  margin: 15px;
+}
+
+.redes-sociales img {
+  height: 30px;
+}
+
+.texto h1  {
+
+  font: size 18px;
+}
+
+
+
+/* Barra Inferior */
+footer {
+  background-color: #FF4438;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgb(255, 255, 255);
+    width: 100%;
+  position:static;
+   margin-top: 79px;
+    bottom: 0px;
+    left: 0px;
+    animation: slideInFromBottom 1s ease-out forwards;
+     z-index: 999;
+    
+}
+
+.barra-inferior {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 0; /* Ajusta el padding para el espacio interno */
+  color: white;
+  width: 100%; /* Ajusta el ancho al 100% del footer */
+  max-width: 1400px; /* Limita el ancho máximo del contenido para centrarlo en pantallas grandes */
+  margin: 0 auto; /* Centra horizontalmente el contenido */
+  overflow-x: hidden;
+
+}
+
+
+.barra-inferior p {
+  margin: 0 30px;
+  font-size: 15px;
+  
+}
+
+/*SECCION 2*/
+
+.seccion-adicional {
+  background-image: url('../images/fondo.jpg'); /* Reemplaza 'ruta/a/tu/imagen-de-fondo.jpg' con la ruta de tu imagen */
+  background-size: 100% auto;
+  background-position: center;
+  height: 1000px; /* Altura deseada para la sección */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff; /* Color de texto blanco */
+  padding: 200px 20px;
+  font-size: 36px;
+  flex-direction: column; /* Cambia la dirección del flexbox a columna */
+  justify-content: flex-start; /* Alinea el contenido al principio */
+  
+  
+}
+.contenido-extra h2 {
+  font-size: 50px; /* Tamaño del título */
+  margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.contenido-extra p {
+  font-size: 24px; /* Tamaño del texto */
+  margin-bottom: 20px; /* Espacio debajo del texto */
+}
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 70px; /* Espacio entre los botones */
+  margin-top: 35px;
+}
+
+.credito-libranza,
+.credito-libre {
+  color: #fff; /* Color de texto blanco */
+  border: none;
+  padding: 20px 40px; /* Ajusta el padding del botón */
+  border-radius:25px; /* Añade bordes redondeados */
+  background-color: transparent;
+  font-family:'arial';
+  font-weight: bold;
+}
+
+.credito-libranza {
+  background-color: #006069; /* Color de fondo verde */
+  position: relative;
+  top: 0px; /* Ajusta este valor para bajar el botón verde */
+}
+
+.credito-libre {
+  background-color: #FF4438; /* Color de fondo naranja */
+  padding: 15px 15 px;
+}
+
+.credito-libranza:hover,
+.credito-libre:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: box-shadow 0.3s ease; /* Transición suave */
+
+}
+
+/* SECCION #3 */
+
+/* Estilos generales de la sección adicional */
+.contenido-adicional {
+  padding: 110px 0;
+  background-color: #f2f2f2;
+  background-image: url('../images/sesion-3-fondo.png'); /* Ruta a tu imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
+  background-position: center; /* Centra la imagen de fondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ajusta la altura mínima a toda la ventana del navegador */
+  height: auto; /* Ajusta el ancho al 100% del contenedor */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+  overflow-x: hidden;
+}
+
+/* Estilos para el contenido flex dentro de la sección */
+.contenido-adicional-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espacio entre imagen y texto */
+  max-width: 1400px; /* Ancho máximo para limitar el tamaño en pantallas más grandes */
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  margin: 0 auto; /* Centra horizontalmente el contenido */
+  padding: 0 50px; /* Añade espacio interno */
+  position: relative; /* Posición relativa para elementos absolutos */
+}
+
+
+
+.contenido-adicional-flex::before {
+  content: "";
+  position: absolute;
+  top: 50%; /* Posiciona el elemento en el centro verticalmente */
+  left: 0; /* Inicia desde la izquierda del contenedor */
+  width: calc(50% - 400px); /* Ajusta la longitud de la línea naranja */
+  height: 4px; /* Grosor de la línea */
+  background-color: #FFA500; /* Color naranja */
+  z-index: -1; /* Coloca la línea detrás del contenido */
+}
+
+
+/* Estilos para la parte de la imagen */
+.contenido-imagen {
+  flex: 1; /* La imagen ocupa más espacio que el texto */
+  text-align: left;
+  margin-right: 0px;
+ 
+  
+}
+
+.contenido-imagen img {
+  .contenido-imagen img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho máximo del contenedor */
+    max-height: 1000px; /* Establece la altura máxima */
+    width: 800; /* Establece el ancho de la imagen en automático para mantener la proporción */
+  height: 900px; /* Establece la altura de la imagen en automático para mantener la proporción */
+  
+  margin: 0px; /* Elimina cualquier margen predeterminado */
+}
+
+  }
+  
+
+
+/* Estilos para el texto y la lista */
+.contenido-texto {
+  flex: 2; /* El texto ocupa menos espacio que la imagen */
+  text-align: left;
+  padding: 10 20px; /* Ajusta el padding para controlar el espacio */
+}
+
+.contenido-texto h2 {
+  color: #FF4438;
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  z-index: 1; /* Coloca el título encima de la línea */
+
+
+}
+
+.contenido-texto .no-te {
+  color: #FF4438;
+  font-size: 50px; /* Tamaño de fuente más pequeño para "No te" */
+  display: block;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.contenido-texto .rindas {
+  color: #FF4438;
+  font-size: 90px; /* Tamaño de fuente más grande para "Rindas" */
+  display: block;
+  margin-top: -60px;
+  text-align: left; /* Reduce el margen superior para menos espacio entre "No te" y "Rindas" */
+}
+
+.contenido-texto ul {
+  list-style-type: disc;
+  color: #006069; /* Utiliza círculos rellenos como viñetas */
+  list-style-position: inside; /* Coloca las viñetas dentro del contenedor de la lista */
+   /* Color de fondo de los círculos */
+  padding-left: 20px; /* Añade un poco de espacio a la izquierda de la lista */
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: left; /* Alinea la lista a la izquierda */
+}
+
+
+.contenido-texto ul li {
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #000000;
+  
+  margin-left: -10px;
+}
+
+
+
+/* Estilos para el botón de contacto */
+.contactanos {
+  background-color: #FF4438;
+  color: #fff;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+}
+
+.contactanos:hover {
+  background-color: #006069;
+}
+
+/* Barra Inferior Redes Sociales */
+.barra-redes {
+  background-color: #006069; /* Color verde */
+  width: 100%;
+  position: static; /* Fijo al fondo de la ventana del navegador */
+  bottom: 0;
+  left: 0;
+  padding: 1px; /* Aumenta el padding para separar más los elementos */
+  z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+}
+
+.contenedor-redes {
+  display: flex;
+  justify-content: flex-end; /* Alinea los íconos a la derecha */
+  align-items: center;
+  max-width: 1400px; /* Ancho máximo para limitar el tamaño en pantallas más grandes */
+  margin: 0 auto; /* Centra horizontalmente el contenido */
+  margin-left: 400px;
+}
+
+.icono-red:hover {
+  transform: scale(1.2); /* Efecto de agrandamiento al pasar el ratón */
+}
+
+/* Estilos para el texto de contacto */
+.texto-contacto {
+  color: white;
+  margin-right: 1225px; /* Mueve el texto hacia la izquierda */
+  font-size: 18px; /* Tamaño de fuente ajustado */
+  font-weight: bold; /* Establece el texto en negrita */
+  white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .barra-redes {
+    justify-content: center; /* Centra la barra de redes sociales */
+  }
+
+  .contenedor-redes {
+    justify-content: center; /* Centra los íconos de redes sociales */
+    margin-left: 0; /* Elimina el margen izquierdo */
+  }
+
+  .texto-contacto {
+    display: none; /* Oculta el texto de contacto */
+  }
+}
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav{
+  background: #006069;
+  height: 85px;
+  width: 100%;
+}
+.enlace{
+  position: absolute;
+  padding: 15px 40px;
+}
+.logo{
+  height: 65px;
+  transition: margin-left 0.5s ease;
+}
+nav ul{
+  float: right;
+  margin-right: 350px;
+  
+}
+nav ul li{
+  display: inline-block;
+  line-height: 85px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-family:  Arial, sans-serif; /* Cambia la tipografía del menú */
+}
+li a.active, li a:hover{
+  background: #00919e;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+
+@media (max-width: 952px){
+  .enlace{
+      padding-left: 30px;
+  }
+  nav ul li a{
+      font-size: 106px;
+  }
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+      display: block;
+  }
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      margin-right: 30px;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 20px;
+  }
+  li a:hover, li a.active{
+      background: none;
+      color: white;
+  }
+  #check:checked ~ ul{
+      left:0;
+  }
+
+}
+
+
+
+
+
+
+
+
+/* Animaciones */
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromCenter {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

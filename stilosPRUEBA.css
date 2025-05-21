@@ -1,0 +1,295 @@
+html,body {
+
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham', Arial, sans-serif;
+  }
+
+
+
+
+  /* Estilos para el botón "Solicita tu Crédito" */
+.solicita-credito {
+    position: absolute; /* Posición absoluta */
+    top: 1.9%; /* Ajusta la posición verticalmente */
+    right: 130px; /* Ajusta la posición horizontalmente */
+    background-color: #FF4438; /* Color de fondo naranja */
+    color: #fff; /* Color de texto blanco */
+    border: none; 
+    padding: 15px 25px; /* Ajusta el padding del botón */
+    border-radius: 20px; /* Añade bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a puntero */
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+    animation: fadeIn 1s ease-out; /* Animación al cargar la página */
+}
+
+.solicita-credito:hover {
+    background-color: #006069; /* Color de fondo del banner */
+}
+
+@media (max-width: 932px) {
+    .solicita-credito {
+        display: none; /* Oculta el botón cuando el ancho de pantalla es menor a 932px */
+    }
+}
+  
+  /* Estilos Generales */
+  body {
+    overflow-y: auto;
+    animation: fadeIn 1s ease-out;
+    background-color: #f0f0f0;/* Color de fondo para propósitos de demostración */
+  }  
+
+
+/* Sección Central */
+.contenido-principal {
+    display: flex;
+    justify-content: space-between; /* Espacio entre el texto y la imagen */
+    align-items: center;
+    padding: 50px 0px;
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo de la sección */
+    height: 600px;
+    margin: 0 auto; /* Centra horizontalmente la sección */
+    flex-wrap: wrap;
+    text-align: left; /* Asegura que el contenido esté alineado a la izquierda */
+    font-family: 'Gotham', Arial, sans-serif; /* Aplica la fuente 'Gotham' al contenido de esta sección */
+   
+  }
+  
+  .contenido-texto {
+    flex: 1.5;
+    padding: 25px;
+    /* margin-left: -100px; */ /* Elimina o ajusta transformaciones específicas */
+  }
+  
+  .contenido-texto h1 {
+    font-size: 50px;
+    color: #FF4438;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: 'Gotham', Arial, sans-serif;
+  }
+  
+  .contenido-texto p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 35px;
+    text-align: left;
+    font-family: 'Gotham', Arial, sans-serif;
+  }
+  
+  .contenido-imagen {
+    flex: 3; /* Ocupa más espacio que el texto */
+    text-align: center;
+    padding: 1px;
+    /* transform: translate(220px, 40px); */ /* Elimina o ajusta transformaciones específicas */
+  }
+  
+  .contenido-imagen img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 25px; /* Añade bordes redondeados a la imagen */
+    margin-top: 20px;
+    margin-left: 50px; /* Elimina o ajusta transformaciones específicas */
+    animation: fadeIn 2.5s ease-out; /* Animación de fadeIn */
+  }
+  
+  .leer-mas {
+    background-color: #006069; /* Color de fondo verde */
+    color: #fff; /* Color de texto blanco */
+    border: none;
+    font-size: 15px;
+    padding: 15px 30px; /* Ajusta el padding del botón */
+    border-radius: 30px; /* Añade bordes redondeados */
+    cursor: pointer;
+    display: block;
+    text-align: left;
+    margin-top: 10px; /* Espacio superior para separar el botón del texto */
+    box-shadow: 0 5px 6px rgba(7, 6, 6, 0.1); /* Añade sombra */
+  }
+  
+  .leer-mas:hover {
+    background-color: #FF4438; /* Color de fondo verde más oscuro */
+  }
+  
+  /* Barra Inferior Redes Sociales */
+  .barra-redes {
+    background-color: #006069; /* Color verde */
+    width: 100%;
+    position: fixed; /* Fijo al fondo de la ventana del navegador */
+    bottom: 0;
+    left: 0;
+    padding: 1px; /* Aumenta el padding para separar más los elementos */
+    z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+  }
+  
+  .contenedor-redes {
+    display: flex;
+    justify-content: flex-end; /* Alinea los íconos a la derecha */
+    align-items: center;
+    max-width: 1400px; /* Ancho máximo para limitar el tamaño en pantallas más grandes */
+    margin: 0 auto; /* Centra horizontalmente el contenido */
+    margin-left: 400px;
+  }
+  
+  .icono-red:hover {
+    transform: scale(1.2); /* Efecto de agrandamiento al pasar el ratón */
+  }
+  
+  /* Estilos para el texto de contacto */
+  .texto-contacto {
+    color: white;
+    margin-right: 1225px; /* Mueve el texto hacia la izquierda */
+    font-size: 18px; /* Tamaño de fuente ajustado */
+    font-weight: bold; /* Establece el texto en negrita */
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+    text-align: right;
+  }
+  
+  
+    /* Animaciones */
+    @keyframes slideInFromTop {
+      0% {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    
+    @keyframes slideInFromBottom {
+      0% {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    @keyframes fadeInFromCenter {
+      0% {
+        opacity: 0;
+        transform: scale(0);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    } 
+  
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background: #006069;
+    height: 85px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 15px 40px;
+}
+.logo{
+    height: 65px;
+    transition: margin-left 0.5s ease;
+}
+nav ul{
+    float: right;
+    margin-right: 350px;
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height: 85px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-family:  Arial, sans-serif; /* Cambia la tipografía del menú */
+}
+li a.active, li a:hover{
+    background: #00919e;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 30px;
+    }
+    nav ul li a{
+        font-size: 106px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        margin-right: 30px;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+
+}
+

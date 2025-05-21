@@ -1,0 +1,441 @@
+html,body {
+
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gotham', Arial, sans-serif;
+}
+
+
+
+
+/* Estilos para el botón "Solicita tu Crédito" */
+.solicita-credito {
+  position: absolute; /* Posición absoluta */
+  top: 1.9%; /* Ajusta la posición verticalmente */
+  right: 130px; /* Ajusta la posición horizontalmente */
+  background-color: #FF4438; /* Color de fondo naranja */
+  color: #fff; /* Color de texto blanco */
+  border: none; 
+  padding: 15px 25px; /* Ajusta el padding del botón */
+  border-radius: 20px; /* Añade bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a puntero */
+  z-index: 1000; /* Asegura que esté por encima del contenido */
+  animation: fadeIn 1s ease-out; /* Animación al cargar la página */
+}
+
+.solicita-credito:hover {
+  background-color: #006069; /* Color de fondo del banner */
+}
+
+@media (max-width: 932px) {
+  .solicita-credito {
+      display: none; /* Oculta el botón cuando el ancho de pantalla es menor a 932px */
+  }
+}
+
+/* Estilos Generales */
+body {
+  overflow-y: auto;
+  animation: fadeIn 1s ease-out;
+  background-color: #f0f0f0;/* Color de fondo para propósitos de demostración */
+}  
+
+
+  /* SECCION CENTRAL */
+/* Sección Central */
+.contenido-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.contenido-flex {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  width: 100%;
+}
+
+.contenido-izquierda {
+  flex: 6;
+  padding-right: 20px;
+  margin-left: 150px;
+  margin-top: 30px;
+  
+}
+
+.contenido-imagen {
+  flex: 10;
+  text-align: right;
+}
+
+.contenido-imagen img {
+  max-width: 100%;
+  height: auto;
+  width: 1000px;
+  max-height: 1000px; /* Altura máxima de la imagen */
+  margin-left: 50px; /*rodar imagen hacia la derecha*/
+  margin-top: -8px;
+  animation: moverImagen 3s ease 1; /* Duración de la animación 3s, se ejecuta una vez */
+  animation-delay: 0.5s; /* Retraso de 0.5 segundos */
+}
+
+  
+
+
+/* Estilos para el título y el texto */
+.contenido-izquierda h2 {
+  font-size: 50px; /* Tamaño del título */
+  color:#FF4438; /* Color del título */
+  line-height: 1; /* Ajusta la altura de la línea para controlar el espacio entre líneas */
+  text-align: left;
+  margin-bottom: 20px; /* Ajusta este valor para reducir el espacio debajo del título */
+  margin-top: 50px;
+}
+
+
+
+.contenido-izquierda p {
+  font-size: 20px; /* Tamaño del texto */
+  color: #333; /* Color del texto */
+ 
+}
+.quienes {
+  display: block;
+  font-size: 25px;
+}
+
+.somos {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .contenido-flex {
+    flex-direction: column; /* Cambia la dirección del flex a columna en pantallas pequeñas */
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+
+  .contenido-izquierda {
+    flex: 1; /* Ocupa todo el ancho disponible */
+    margin-left: 0; /* Elimina el margen izquierdo */
+    margin-top: 0; /* Elimina el margen superior */
+    padding-right: 0; /* Elimina el relleno derecho */
+    text-align: center; /* Centra el texto */
+  }
+
+  .contenido-imagen {
+    display: none; /* Oculta la imagen en pantallas pequeñas */
+  }
+
+  .contenido-izquierda h2 {
+    font-size: 28px; /* Reducir el tamaño del título */
+    margin-top: 40px; /* Ajusta el margen superior del título */
+    margin-bottom: 10px; /* Ajusta el margen inferior del título */
+    text-align: center;
+  }
+
+  .contenido-izquierda p {
+    font-size: 16px; /* Reducir el tamaño del texto */
+  }
+  .contenido-izquierda .quienes {
+    font-size: 30px; /* Tamaño de fuente más grande para el título "Quiénes Somos" */
+   margin-top: 10px;
+  }
+
+
+}
+
+
+
+/*seccion 2  */
+
+/* Estilos para la segunda sección */
+
+
+.seccion-dos {
+  min-height: 600px;
+   padding: 0px 0px;
+  background-color: #F2F2F2;
+ 
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.espacio-final {
+  background-color: #f2f2f2; /* Mismo color de fondo que la sección */
+  height: 180px; /* Altura del espacio final */
+}
+
+.contenido-flex {
+  display: flex;
+ 
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+  max-width: 100%; /* Ancho máximo igual al de la ventana del navegador */
+}
+
+.contenido-imagen-seccion {
+  flex: 10; /* Ocupa todo el ancho disponible */
+  margin-top: 50px;
+  text-align: right; 
+  
+
+}
+
+.contenido-imagen-seccion img {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-height: 600px; /* Altura máxima de la imagen */
+  padding-top: 0;
+}
+
+.contenido-texto-seccion {
+  display: flex; /* Ocupa todo el ancho disponible */
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 100%;
+  padding: 0 20px; /* Añade espacio alrededor del contenido */
+  text-align: left; margin-top: 10px;
+  
+}
+
+.texto-izquierda,
+.texto-derecha {
+  margin: 0 100px; /* Ajusta el margen horizontal según sea necesario */
+  margin-top: 60px;
+}
+
+.texto-derecha {
+  margin-left: 200px; /* Empuja el contenido hacia la derecha */
+  margin-top: 60px; /* Ajusta el margen superior según sea necesario */
+
+}
+
+
+
+.texto-izquierda h2,
+.texto-derecha h2 {
+  font-size: 45px;
+  color: #FF4438;
+  margin-bottom: 25px;
+}
+
+
+
+.texto-izquierda p,
+.texto-derecha p {
+
+  font-size: 20px;
+  color: #333;
+  line-height: 1.5;
+  margin: 0px;
+}
+
+@media (max-width: 768px) {
+  .contenido-texto-seccion {
+    flex-direction: column; /* Cambia la dirección del flex a columna en pantallas pequeñas */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Alinea el texto al centro */
+  }
+
+  .texto-izquierda,
+  .texto-derecha {
+    margin: 0; /* Elimina el margen horizontal para ocupar todo el ancho disponible */
+    margin-top: 30px; /* Ajusta el margen superior según sea necesario */
+  }
+
+  .texto-derecha {
+    margin-top: 30px; /* Ajusta el margen superior del texto de la derecha */
+  }
+
+  .texto-izquierda h2,
+  .texto-derecha h2 {
+    font-size: 36px; /* Reduce el tamaño del título */
+    margin-bottom: 20px; /* Ajusta el margen inferior del título */
+  }
+
+  .texto-izquierda p,
+  .texto-derecha p {
+    font-size: 16px; /* Reduce el tamaño del texto */
+    line-height: 1.4; /* Ajusta la altura de línea */
+  }
+  
+  .texto-derecha {
+    margin-top: 50px; /* Ajusta el margen superior del texto de la derecha */
+  }
+
+
+}
+
+
+
+ /* Estilos para la barra ajustable */
+.barra-ajustable {
+  width: 100%;
+  height: 3px; /* Ajuste la altura inicial para hacer la barra más delgada */
+  background-color: #FF4438; /* Color naranja */
+  cursor: ns-resize;
+  position: relative;
+  margin-bottom: 10px; /* Ajusta este valor según el espacio que necesites */
+}
+
+
+
+  
+  /* Animaciones */
+  @keyframes moverImagen {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(50px); /* Movimiento hacia la derecha */
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  
+
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInFromCenter {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background: #006069;
+    height: 85px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 15px 40px;
+}
+.logo{
+    height: 65px;
+    transition: margin-left 0.5s ease;
+}
+nav ul{
+    float: right;
+    margin-right: 350px;
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height: 85px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-family:  Arial, sans-serif; /* Cambia la tipografía del menú */
+}
+li a.active, li a:hover{
+    background: #00919e;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 30px;
+    }
+    nav ul li a{
+        font-size: 106px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        margin-right: 30px;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: white;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+
+}
+

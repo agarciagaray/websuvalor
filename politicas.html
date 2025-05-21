@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Responsive</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="css/StylosP.css">
+    <!-- Enlace al archivo de Font Awesome para el ícono de hamburguesa -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegación con menú responsive -->
+    <nav>
+        <!-- Checkbox para controlar el estado del menú -->
+        <input type="checkbox" id="check">
+        <!-- Label que funciona como botón de hamburguesa -->
+        <label for="check" class="checkbtn">
+            <!-- Icono de hamburguesa de Font Awesome -->
+            <i class="fas fa-bars"></i>
+        </label>
+        <!-- Enlace al inicio con el logo -->
+        <a href="#" class="enlace">
+            <img src=images/Grande.png alt="Logo" class="logo">
+        </a>
+        <!-- Lista de opciones del menú -->
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="creditos.html">Créditos</a></li>
+            <li><a class="active" href="politicas.html">Políticas</a></li>
+            <li><a href="contacto.html">Contactó</a></li>
+          
+        </ul>
+    </nav>
+    <button class="solicita-credito">Solicita tu Crédito</button>
+    <!-- Sección principal -->
+    <section>
+        <!-- Contenido de la sección principal -->
+        <main>
+            <section id="nosotros" class="contenido-principal">
+                <div class="contenido-texto">
+                    <h1>Políticas</h1>
+                    <p>Conoce nuestra política de privacidad y la manera como Suvalor trabaja por sus sueños.</p>
+                    <button class="leer-mas" onclick="abrirPDF()">Leer más</button>
+                </div>
+                <div class="contenido-imagen">
+                    <img src="images/politicas.png" alt="Descripción de la Imagen">
+                </div>
+            </section>
+    
+             <!-- Barra Inferior Redes Sociales -->
+         <footer class="barra-redes">
+            <div class="contenedor-redes">
+                <!-- Texto "Comunícate con nosotros" en la esquina izquierda -->
+                <div class="texto-contacto">
+                    <p style="color: white; margin-right: auto;">!Comunícate con nosotros¡</p>
+                   
+                </div>
+                <a href="https://facebook.com"><img src="images/face2.png" alt="Facebook" class="icono-red"></a>
+                <a href="https://instagram.com"><img src="images/Instagram2.png" alt="Instagram" class="icono-red"></a>
+                <a href="https://linkedin.com"><img src="images/linke2.png" alt="LinkedIn" class="icono-red"></a>
+                <a href="https://twitter.com"><img src="images/twitter.png" alt="YouTube" class="icono-red"></a>
+            </div>
+        
+        
+    </section>
+</body>
+</html>

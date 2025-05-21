@@ -1,0 +1,421 @@
+html,body {
+
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gotham', Arial, sans-serif;
+}
+
+
+
+
+/* Estilos para el botón "Solicita tu Crédito" */
+.solicita-credito {
+  position: absolute; /* Posición absoluta */
+  top: 1.9%; /* Ajusta la posición verticalmente */
+  right: 130px; /* Ajusta la posición horizontalmente */
+  background-color: #FF4438; /* Color de fondo naranja */
+  color: #fff; /* Color de texto blanco */
+  border: none; 
+  padding: 15px 25px; /* Ajusta el padding del botón */
+  border-radius: 20px; /* Añade bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a puntero */
+  z-index: 1000; /* Asegura que esté por encima del contenido */
+  animation: fadeIn 1s ease-out; /* Animación al cargar la página */
+}
+
+.solicita-credito:hover {
+  background-color: #006069; /* Color de fondo del banner */
+}
+
+@media (max-width: 932px) {
+  .solicita-credito {
+      display: none; /* Oculta el botón cuando el ancho de pantalla es menor a 932px */
+  }
+}
+
+/*Seccion central */
+.seccion-contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 100px 0px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.contenido-contacto {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}  
+
+.lado-izquierdo {
+  flex: 1;
+  padding: 20px;
+  margin-right: 150px; /* Aumenta el margen derecho */
+  box-sizing: border-box;
+}
+
+.lado-derecho {
+  flex: 1;
+  padding: 20px;
+  margin-left: 150px; /* Aumenta el margen izquierdo */
+  box-sizing: border-box;
+}
+
+
+.nombre-apellido,
+.email-telefono {
+    display: flex;
+    gap: 10px; /* Espacio entre los campos */
+}
+
+.nombre-apellido input,
+.email-telefono input {
+    flex: 1;
+}
+
+
+
+.lado-izquierdo, .lado-derecho {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.lado-izquierdo {
+  margin-right: 20px;
+}
+
+.lado-izquierdo h2, .lado-derecho h2 {
+  font-size: 30px;
+  color: #FF4438;
+  margin-bottom: 50px;
+  
+}
+
+.lado-izquierdo h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.mapa {
+  margin-bottom: 20px;
+
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 15px; /* Bordes redondeados */
+}
+
+.logos-textos {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-texto {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.logo-texto img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contacto-formulario h3,
+.ubicacion h3 {
+    font-size: 50px;
+    color: #333;
+    font-weight: normal; /* Quitar la negrita */
+}
+
+
+
+.lado-izquierdo h3 {
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.lado-izquierdo h2 {
+  margin-bottom: 20px;
+}
+
+.lado-derecho h2 {
+  margin-bottom: 20px;
+}
+
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #FF4438;
+  border-radius: 15px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formulario-contacto button {
+  padding: 15px  15px  !important;
+  width: auto;
+   background-color: #006069;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  transition: all 300ms ease;
+ 
+}
+
+
+.formulario-contacto button:hover {
+  background-color: #FF4438;
+}
+
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"],
+.formulario-contacto input[type="tel"],
+.formulario-contacto textarea {
+    margin-bottom: 40px; /* Ajusta el valor según sea necesario */
+}
+
+@media (max-width: 768px) {
+  .seccion-contacto {
+    text-align: center; /* Centra el texto y elementos dentro de .seccion-contacto */
+    padding: 30px 10px; /* Ajusta el padding */
+  }
+
+  .contenido-contacto {
+    max-width: 100%; /* Asegura que no exceda el ancho máximo */
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+
+  .lado-izquierdo, .lado-derecho {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 100%; /* Asegura que no exceda el ancho máximo */
+  }
+
+  .lado-derecho {
+    margin-top: 15px; /* Añade espacio arriba del lado derecho */
+    margin-left: 0;
+  }
+
+  .mapa {
+    margin-bottom: 30px; /* Ajusta el margen inferior del mapa */
+  }
+}
+/* Barra Inferior Redes Sociales */
+.barra-redes {
+  background-color: #006069; /* Color verde */
+  width: 100%;
+  position: fixed; /* Fijo al fondo de la ventana del navegador */
+  bottom: 0;
+  left: 0;
+  padding: 1px; /* Aumenta el padding para separar más los elementos */
+  z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+}
+
+.contenedor-redes {
+  display: flex;
+  justify-content: flex-end; /* Alinea los íconos a la derecha */
+  align-items: center;
+  max-width: 1400px; /* Ancho máximo para limitar el tamaño en pantallas más grandes */
+  margin: 0 auto; /* Centra horizontalmente el contenido */
+  margin-left: 400px;
+}
+
+.icono-red:hover {
+  transform: scale(1.2); /* Efecto de agrandamiento al pasar el ratón */
+}
+
+/* Estilos para el texto de contacto */
+.texto-contacto {
+  color: white;
+  margin-right: 1225px; /* Mueve el texto hacia la izquierda */
+  font-size: 18px; /* Tamaño de fuente ajustado */
+  font-weight: bold; /* Establece el texto en negrita */
+  white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .barra-redes {
+    justify-content: center; /* Centra la barra de redes sociales */
+  }
+
+  .contenedor-redes {
+    justify-content: center; /* Centra los íconos de redes sociales */
+    margin-left: 0; /* Elimina el margen izquierdo */
+  }
+
+  .texto-contacto {
+    display: none; /* Oculta el texto de contacto */
+  }
+}
+
+
+
+
+
+
+  
+  /* Animaciones */
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInFromCenter {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background: #006069;
+    height: 85px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 15px 40px;
+}
+.logo{
+    height: 65px;
+    transition: margin-left 0.5s ease;
+}
+nav ul{
+    float: right;
+    margin-right: 350px;
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height: 85px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-family:  Arial, sans-serif; /* Cambia la tipografía del menú */
+}
+li a.active, li a:hover{
+    background: #00919e;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 30px;
+    }
+    nav ul li a{
+        font-size: 106px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        margin-right: 30px;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: white;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+
+}

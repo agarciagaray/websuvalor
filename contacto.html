@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Responsive</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="css/StylesCon.css">
+    <!-- Enlace al archivo de Font Awesome para el ícono de hamburguesa -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegación con menú responsive -->
+    <nav>
+        <!-- Checkbox para controlar el estado del menú -->
+        <input type="checkbox" id="check">
+        <!-- Label que funciona como botón de hamburguesa -->
+        <label for="check" class="checkbtn">
+            <!-- Icono de hamburguesa de Font Awesome -->
+            <i class="fas fa-bars"></i>
+        </label>
+        <!-- Enlace al inicio con el logo -->
+        <a href="#" class="enlace">
+            <img src=images/Grande.png alt="Logo" class="logo">
+        </a>
+        <!-- Lista de opciones del menú -->
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="creditos.html">Créditos</a></li>
+            <li><a href="politicas.html">Políticas</a></li>
+            <li><a class="active" href= "contacto.html">Contactó</a></li>
+          
+        </ul>
+    </nav>
+    <button class="solicita-credito">Solicita tu Crédito</button>
+    <!-- Sección Central -->
+    <main>
+        <main>
+            <section id="contacto" class="seccion-contacto">
+                <div class="contenido-contacto">
+                    <!-- Lado Izquierdo (Intercambiado) -->
+                    <div class="lado-izquierdo">
+                        <h2>Contáctanos</h2>
+                        <h3>Contáctenos sobre cualquier asunto relacionado con nuestra empresa o servicios, te contactaremos  lo antes posible.</h3>
+                        <form class="formulario-contacto">
+                            <div class="nombre-apellido">
+                                <input type="text" name="nombre" placeholder="Nombre" required>
+                                <input type="text" name="apellido" placeholder="Apellido" required>
+                            </div>
+                            <div class="email-telefono">
+                                <input type="email" name="email" placeholder="Email" required>
+                                <input type="tel" name="telefono" placeholder="Teléfono" required>
+                            </div>
+                            <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    <!-- Lado Derecho (Intercambiado) -->
+                    <div class="lado-derecho">
+                        <h2>¿Dónde nos ubicamos?</h2>
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15667.849144679752!2d-74.79220885!3d10.9662193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d663f45bd69%3A0x26c88ee7a43856e7!2sFamily%20Party!5e0!3m2!1ses-419!2sco!4v1719065620562!5m2!1ses-419!2sco" width="670" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                           
+                        </div>
+                        <div class="logos-textos">
+                            <div class="logo-texto">
+                                <img src="images/gps.png" alt="Logo 1">
+                                <p>Cr 200B #1-3/Oficina 3 -B/quilla
+                                </p>
+                            </div>
+                            <div class="logo-texto">
+                                <img src="images/correo.png" alt="Logo 2">
+                                <p>Hola@pagina.co</p>
+                            </div>
+                            <div class="logo-texto">
+                                <img src="images/tele.png" alt="Logo 3">
+                                <p> (605)3805236</p>
+                            </div>
+                            <div class="logo-texto">
+                                <img src="images/wha.png" alt="Logo 4">
+                                <p>(+57)3005255156</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+        </section>
+        <!-- Barra Inferior Redes Sociales -->
+     <footer class="barra-redes">
+         <div class="contenedor-redes">
+             <!-- Texto "Comunícate con nosotros" en la esquina izquierda -->
+             <div class="texto-contacto">
+                 <p style="color: white; margin-right: auto;">!Comunícate con nosotros¡</p>
+                
+             </div>
+             <a href="https://facebook.com"><img src="images/face2.png" alt="Facebook" class="icono-red"></a>
+             <a href="https://instagram.com"><img src="images/Instagram2.png" alt="Instagram" class="icono-red"></a>
+             <a href="https://linkedin.com"><img src="images/linke2.png" alt="LinkedIn" class="icono-red"></a>
+             <a href="https://twitter.com"><img src="images/twitter.png" alt="YouTube" class="icono-red"></a>
+         </div>
+     
+     
+     
+     </footer>
+     
+        </footer>
+    </body>
+    </html>

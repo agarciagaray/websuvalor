@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Responsive</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="css/StylosC.css">
+    <!-- Enlace al archivo de Font Awesome para el ícono de hamburguesa -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegación con menú responsive -->
+    <nav>
+        <!-- Checkbox para controlar el estado del menú -->
+        <input type="checkbox" id="check">
+        <!-- Label que funciona como botón de hamburguesa -->
+        <label for="check" class="checkbtn">
+            <!-- Icono de hamburguesa de Font Awesome -->
+            <i class="fas fa-bars"></i>
+        </label>
+        <!-- Enlace al inicio con el logo -->
+        <a href="#" class="enlace">
+            <img src=images/Grande.png alt="Logo" class="logo">
+        </a>
+        <!-- Lista de opciones del menú -->
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a class="active" href= "creditos.html">Créditos</a></li>
+            <li><a href="politicas.html">Políticas</a></li>
+            <li><a href="contacto.html">Contactó</a></li>
+          
+        </ul>
+    </nav>
+    <button class="solicita-credito">Solicita tu Crédito</button>
+
+    <!-- Sección Central -->
+    <main>
+        <section class="contenido-central">
+            <div class="contenido-imagen">
+                <img src="images/3intento.png" alt="Imagen Izquierda">
+            </div>
+            <div class="contenido-texto">
+                <h2>Requisitos para Crédito</h2>
+                <ul>
+                    <li>Duis placerat laoreet eleifend odio rhoncus venenatis tincidunt, posuere quam interdum curs suspendisse.</li>
+                    <li>Duis placerat laoreet eleifend odio rhoncus venenatis tincidunt, posuere quam interdum curs suspendisse.</li>
+                    <li>Duis placerat laoreet eleifend odio rhoncus venenatis tincidunt, posuere quam interdum curs suspendisse.</li>
+                    <li>Duis placerat laoreet eleifend odio rhoncus venenatis tincidunt, posuere quam interdum curs suspendisse.</li>
+                </ul>
+                <p class="comunicate-texto">Comunícate con nosotros y conoce los requisitos para obtener tu préstamo.</p>
+                <a href="https://www.google.com" class="contactanos">Contáctanos</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menuMobile = document.querySelector('.menu-mobile');
+    
+            menuToggle.addEventListener('click', function() {
+                menuMobile.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
